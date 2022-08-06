@@ -24,3 +24,13 @@ Download : [gdrive](https://drive.google.com/drive/folders/1ZtLYWvqbZW5NKcOq8nY5
 ## Including new occluders
 
 We will release the code to generate the occluded images soon. Just by adding a **new** occluder image and its information in the **"occluders.csv"** you can use the script to create a new benchmark dataset. Hence, this dataset can be extended overtime with contributions from the community.  
+
+
+## TODO 
+
+- [X] Link to the data
+- [X] Link to the preprint
+- [ ] Link to the published paper
+- [ ] Evaluation script
+- [ ] Upload occluders
+- [ ] Script to generate the data
