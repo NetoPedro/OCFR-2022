@@ -52,3 +52,12 @@ If you use our code or data in your research, please cite with:
 - [ ] Evaluation script
 - [ ] Upload occluders
 - [ ] Script to generate the data
+
+## License
+```
+Attribution-NonCommercial-ShareAlike 4.0 International
+This project is licensed under the terms of the Attribution-NonCommercial-ShareAlike 4.0
+International (CC BY-NC-SA 4.0) license. 
+Copyright (c) 2022 Instituto de Engenharia de Sistemas e Computadores, Tecnologia e Ciência
+```
+
