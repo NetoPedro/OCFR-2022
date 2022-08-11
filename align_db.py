@@ -34,7 +34,6 @@ occlusions_combinations = {1:["lower_face"],
 
 
 
-#python3 face_occlude.py --source_root=/home/pedro/Documents/Datasets/Occluded/lfw --dest_root=/home/pedro/Documents/Datasets/Occluded/lfwO
 
 def select_occlusion_type():
     return np.random.choice([1,2,3,4,5,6,7,8,9,10,11]) #
@@ -267,7 +266,6 @@ def parse_arguments(argv):
     
     parser.add_argument('--input-dir', type=str, default='Data/lfw' , help='Directory with unaligned images.')
     parser.add_argument('--output-dir', type=str,default='Data/lfw_aligned', help='Directory with aligned face thumbnails.')
-    parser.add_argument('--output-dir-mask', type=str,default='Data/lfw_aligned_mask_random', help='Directory with aligned face thumbnails.')
 
     parser.add_argument('--image-size', type=str, help='Image size (height, width) in pixels.', default='112,112')
     #parser.add_argument('--margin', type=int,

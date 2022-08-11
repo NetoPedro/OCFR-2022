@@ -5,13 +5,58 @@ Official repository for the **OCFR 2022: Competition on Occluded Face Recognitio
 The paper can be viewed at: [arXiv](https://arxiv.org/abs/2208.02760)
 
 
+## Generate the data
+
+```
+python3 align_db.py --input-dir=input_path --output-dir=output_path --image-size=112
+```
+
+## Replicating protocols
+
+### 1
+```
+def select_occlusion_type():
+    return np.random.choice([1,2,4]) 
+```
+
+### 2 
+```
+def select_occlusion_type():
+    return np.random.choice([5,6,7,10,11]) 
+```
+
+### 3
+```
+def select_occlusion_type():
+    return np.random.choice([1,2,4,5,6,7,10,11]) 
+```
+### 4 
+```
+def select_occlusion_type():
+    return np.random.choice([1,2,4,6,7,10,11]) 
+```
+### 5
+```
+def select_occlusion_type():
+    return np.random.choice([8,9]) 
+```
+### 6
+```
+def select_occlusion_type():
+    return np.random.choice([5,6,7,8,9,10,11]) 
+```
+### 7 
+```
+def select_occlusion_type():
+    return np.random.choice([1,2,4,5,6,7,8,9,10,11]) 
+```
 ## Evaluation Script
 
 Please also find a sample of an evaluation script in the **"evaluation.py"** file. 
 
 ## Including new occluders
 
-We will release the code to generate the occluded images soon. Just by adding a **new** occluder image and its information in the **"occluders.csv"** you can use the script to create a new benchmark dataset. Hence, this dataset can be extended overtime with contributions from the community.  
+We will release the code to generate the occluded images soon. Just by adding a **new** occluder image and its information in the **"occluders/occluders.csv"** you can use the script to create a new benchmark dataset. Hence, this dataset can be extended overtime with contributions from the community.  
 
 Moreover, these occlusions can be easly applied to other **base** datasets. For instance, **AgeDB-30**, **MS1MV2**, etc. 
 
