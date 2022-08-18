@@ -14,7 +14,7 @@ Images for the 8 different protocols are provided in the zip file, within indivi
 
 The issame list is equal for all protocols, as well as the pairs list. Please be aware that the same image might appear non-occluded as a reference and occluded as a probe (while in different pairs). Hence, we provide a duplicate of all images with a renaming indicating if it is used as probe or not. 
 
-We provide two images: the occlusion (a mask-like image where all the pixels except the occlusion pixels are set to 0), and an occlusion mask (similar to the previous, but occlusion pixels are set to 0 and the others are set to 255). To construct an occluded image, you should have the respective [LFW](http://vis-www.cs.umass.edu/lfw/) image, and use an equivalent python command ```img[mask==0] = occlusion[mask==0```
+We provide two images: the occlusion (a mask-like image where all the pixels except the occlusion pixels are set to 0), and an occlusion mask (similar to the previous, but occlusion pixels are set to 0 and the others are set to 255). To construct an occluded image, you should have the respective [LFW](http://vis-www.cs.umass.edu/lfw/) image, and use an equivalent python command ```img[mask==0] = occlusion[mask==0]```
 
 Download : [gdrive](https://drive.google.com/drive/folders/1ZtLYWvqbZW5NKcOq8nY5OIyS_i_xz820?usp=sharing)
 
