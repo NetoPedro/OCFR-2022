@@ -136,9 +136,9 @@ and
 - [X] Citation to arXiv
 - [ ] Link to the published paper
 - [ ] Citation published version
-- [ ] Evaluation script
-- [ ] Upload occluders
-- [ ] Script to generate the data
+- [X] Evaluation script
+- [X] Upload occluders
+- [X] Script to generate the data
 
 ## License
 ```
