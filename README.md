@@ -67,6 +67,34 @@ def select_occlusion_type():
 
 Please also find a sample of an evaluation script in the **"evaluation.py"** file. 
 
+### Example of the read function 
+
+- Non-occluded path is in the form: XXX/lfwA_u/identity/YYY.jpg
+- Occluded paths (in the csv files) are in the form: XXX/lfwAO[1-7]_u/identity/YYY.jpg
+- Occlusions paths are in the form: XXX/occlusions_[1-7]/identity/YYY_occlusion.jpg
+- Mask paths are in the form: XXX/occlusions_[1-7]/identity/YYY_occlusion_mask.jpg
+
+```
+def read(self,image_path):
+    if "lfwA_u" in image_path: #if the image is non-occluded.
+        img = cv2.imread(image_path)
+    else: 
+        mask_path = image_path.replace("lfwAO","occlusions_").replace("_u/","/") 
+        occlusion_path = mask_path.replace(".jpg","_occlusion.jpg") #get the occlusion path
+        mask_path = mask_path.replace(".jpg","_occlusion_mask.jpg") #get the mask_path
+        occlusion = cv2.imread(occlusion_path) # read the occlusion
+        mask = cv2.imread(mask_path) # read the mask
+        image_path = image_path.split("/") #redirect the path from the occluded to the non-occluded image
+        image_path[4] = "lfwA_u" 
+        img = cv2.imread(os.path.join(*image_path)) #read image
+        img[mask==0] = occlusion[mask==0] # merge occlusion
+    return img
+
+```
+
+The code above can be simplified if the CSV files are directly modified to replace "lfwAO" with "occlusions_" and "_u/" with "/".
+
+
 ## Including new occluders
 
 We will release the code to generate the occluded images soon. Just by adding a **new** occluder image and its information in the **"occluders/occluders.csv"** you can use the script to create a new benchmark dataset. Hence, this dataset can be extended overtime with contributions from the community.  
