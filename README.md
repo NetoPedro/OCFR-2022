@@ -2,7 +2,7 @@
 
 Official repository for the **OCFR 2022: Competition on Occluded Face Recognition From Synthetically Generated Structure-Aware Occlusions** at 2022 International Joint Conference on Biometrics (IJCB 2022). 
 
-The paper can be viewed at: [arXiv](https://arxiv.org/abs/2208.02760)
+The paper can be viewed at: [arXiv](https://arxiv.org/abs/2208.02760) and [IEEE](https://ieeexplore.ieee.org/document/10007963)
 
 
 
