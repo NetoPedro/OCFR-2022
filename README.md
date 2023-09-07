@@ -108,11 +108,13 @@ The code was extended from the initial code of [Self-restrained-Triplet-Loss](ht
 If you use our code or data in your research, please cite with:
 
 ```
-@article{neto2022ocfr,
-  title={OCFR 2022: Competition on Occluded Face Recognition From Synthetically Generated Structure-Aware Occlusions},
-  author = {Neto, Pedro C. and Boutros, Fadi and Pinto, Joao Ribeiro and Damer, Naser and Sequeira, Ana F. and Cardoso, Jaime S. and Bengherabi, Messaoud and Bousnat, Abderaouf and Boucheta, Sana and Hebbadj, Nesrine and Erakın, Mustafa Ekrem and Demir, Uğur and Ekenel, Hazım Kemal and Vidal, Pedro Beber de Queiroz and Menotti, David},
-  journal={arXiv preprint arXiv:2208.02760},
-  year={2022}
+@inproceedings{neto2022ocfr,
+  title={OCFR 2022: Competition on occluded face recognition from synthetically generated structure-aware occlusions},
+  author={Neto, Pedro C and Boutros, Fadi and Pinto, Joao Ribeiro and Damer, Naser and Sequeira, Ana F and Cardoso, Jaime S and Bengherabi, Messaoud and Bousnat, Abderaouf and Boucheta, Sana and Hebbadj, Nesrine and others},
+  booktitle={2022 IEEE International Joint Conference on Biometrics (IJCB)},
+  pages={1--9},
+  year={2022},
+  organization={IEEE}
 }
 ```
 
@@ -134,8 +136,8 @@ and
 
 - [X] Link to the preprint
 - [X] Citation to arXiv
-- [ ] Link to the published paper
-- [ ] Citation published version
+- [X] Link to the published paper
+- [X] Citation published version
 - [X] Evaluation script
 - [X] Upload occluders
 - [X] Script to generate the data
