@@ -246,11 +246,17 @@ def main(args):
                   bgr = warped[...,::-1]
                   original_bgr = img[...,::-1]
                   #print(bgr.shape)
+                  print(target_file)
+
+                  if not os.path.exists('/'.join(target_file.split('\\')[:-1])):
+                    os.makedirs('/'.join(target_file.split('\\')[:-1]))
+
+
                   cv2.imwrite(target_file, bgr)
                   cv2.imwrite(target_file2 , original_bgr)
                   oline = '%s\t%s\t%s\t%s\t%s\n' % (target_file, _bbox[0], _bbox[1], _bbox[2], _bbox[3])
                   text_file.write(oline)
-                  target_dir = os.path.join(args.output_dir_mask ,  a)
+                  target_dir = os.path.join(args.output_dir ,  a)
                   if not os.path.exists(target_dir):
                           os.makedirs(target_dir)
                   target_file = os.path.join(target_dir, b)
