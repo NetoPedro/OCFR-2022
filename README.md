@@ -4,7 +4,7 @@ Official repository for the **OCFR 2022: Competition on Occluded Face Recognitio
 
 The paper can be viewed at: [arXiv](https://arxiv.org/abs/2208.02760) and [IEEE](https://ieeexplore.ieee.org/document/10007963)
 
-
+<img src="examples.png"> 
 
 ## Data
 
