@@ -1,0 +1,16 @@
+dlib==19.24.2
+easydict==1.11
+imageio==2.33.1
+numpy==1.26.4
+opencv_python==4.9.0.80
+pandas==2.2.0
+Pillow==10.0.1
+Pillow==10.2.0
+scikit_learn==1.4.0
+scipy==1.11.4
+six==1.16.0
+skimage==0.0
+tensorflow==2.15.0
+tensorflow_intel==2.15.0
+torch==2.2.0
+tqdm==4.66.1
